@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check isPrime</title>
+</head>
+<body>
+<input type="number" id="num1" oninput="isPrime(this.value)" onchange="isPrime(this.value)">
+<p>Result</p>
+<span id="span1"></span>
+<script>
+  function isPrime(n) {
+    for (let i=2; i<n/2;i++) {
+      if (n%i==0) {
+        return document.getElementById('span1').innerHTML='ko la so nguyen to';
+      }
+    } return document.getElementById('span1').innerHTML=' la so nguyen to';;
+  }
+</script>
+</body>
+</html>
